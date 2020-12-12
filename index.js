@@ -16,7 +16,7 @@ function createEmployeeRecords(records) {
 }
 
 function createTimeInEvent(employee, timeIn) {
-  let timeInEvent = {type: "timeIn", hour: timeIn}
-  console.log(timeInEvent)
-   employee.timeInEvents << timeInEvent
+  let newEvent = {type: "timeIn", hour: timeIn}
+  console.log(newEvent)
+   employee.timeInEvents << newEvent
 }
