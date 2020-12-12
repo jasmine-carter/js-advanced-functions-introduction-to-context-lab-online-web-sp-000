@@ -16,5 +16,7 @@ function createEmployeeRecords(records) {
 }
 
 function createTimeInEvent(employee, timeIn) {
-  return employee.timeInEvents << timeIn
+  let timeInEvent = {type: "timeIn", hour: timeIn}
+
+  employee.timeInEvents << timeInEvents
 }
