@@ -52,7 +52,13 @@ function allWagesFor(employee){
 function calculatePayroll(employees) {
   let payroll = 0
   for (const employee of employees) {
-    payroll = allWagesFor(employee) + payroll
+    payroll = allWagesFor(employee) + payroll;
   }
-  return payroll
+  return payroll;
+};
+
+function findEmployeeByFirstName(employeesList, name) {
+  employeesList.filter(n => {
+    return n == name;
+  })
 }
