@@ -45,7 +45,14 @@ function allWagesFor(employee){
   let allWages = 0
   for (const evt of employee.timeOutEvents){
      allWages = wagesEarnedOnDate(employee, evt.date) + allWages
-
   }
   return allWages
+};
+
+function calculatePayroll(employees) {
+  let payroll = 0
+  for (const employee of employees) {
+    payroll = allWagesFor(employee) + payroll
+  }
+  return payroll
 }
