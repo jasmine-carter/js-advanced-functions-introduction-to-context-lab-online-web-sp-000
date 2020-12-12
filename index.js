@@ -42,8 +42,8 @@ function wagesEarnedOnDate(employee, date) {
 
 
 function allWagesFor(employee){
-  //for each date on an employee, does wages earned
+  allWages = 0
   for (const evt of employee.timeOutEvents){
-    wagesEarnedOnDate(employee, evt)
   }
+  return allWages
 }
