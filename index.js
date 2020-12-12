@@ -11,6 +11,6 @@ function createEmployeeRecord(record) {
   return employee
 }
 
-function createEmployeeRecords() {
-
+function createEmployeeRecords(records) {
+  records.map(createEmployeeRecord)
 }
