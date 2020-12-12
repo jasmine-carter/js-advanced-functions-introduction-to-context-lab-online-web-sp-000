@@ -26,3 +26,7 @@ function createTimeOutEvent(employee, timeOut) {
     employee.timeOutEvents.push(newEvent)
     return employee
 }
+
+function hoursWorkedOnDate(employee, date) {
+
+}
