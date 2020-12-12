@@ -1,7 +1,7 @@
 // Your code here
 
 function createEmployeeRecord(record) {
-  employee = {}
+  let employee = {}
   let firstName = employee[0]
   let familyName = employee[1]
   let title = employee[2]
