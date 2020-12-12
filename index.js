@@ -17,12 +17,12 @@ function createEmployeeRecords(records) {
 
 function createTimeInEvent(employee, timeIn) {
   let newEvent = {type: "TimeIn", hour: parseInt(timeIn.substring(11, 15)), date: timeIn.substring(0,10)}
-    employee.timeInEvents.push(newEvent);
-    return employee;
+    employee.timeInEvents.push(newEvent)
+    return employee
 };
 
 function createTimeOutEvent(employee timeOut) {
   let newEvent = {type: "TimeOut", hour: parseInt(timeOut.substring(11, 15)), date: timeOut.substring(0,10)}
-    employee.timeOutEvents.push(newEvent);
-    return employee;
+    employee.timeOutEvents.push(newEvent)
+    return employee
 }
