@@ -6,5 +6,7 @@ function createEmployeeRecord(record) {
    employee.familyName = record[1]
    employee.title = record[2]
    employee.payPerHour = record[3]
+   employee.timeInEvents = []
+   employee.timeOutEvents = []
   return employee
 }
