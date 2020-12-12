@@ -10,3 +10,7 @@ function createEmployeeRecord(record) {
    employee.timeOutEvents = []
   return employee
 }
+
+function createEmployeeRecords() {
+
+}
