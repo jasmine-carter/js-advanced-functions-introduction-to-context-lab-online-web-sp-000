@@ -39,3 +39,11 @@ function hoursWorkedOnDate(employee, date) {
 function wagesEarnedOnDate(employee, date) {
   return hoursWorkedOnDate(employee, date) * employee.payPerHour
 }
+
+
+function allWagesFor(employee){
+  //for each date on an employee, does wages earned
+  for (const evt of employee.timeOutEvents){
+    wagesEarnedOnDate(employee, evt)
+  }
+}
