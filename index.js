@@ -28,7 +28,8 @@ function createTimeOutEvent(employee, timeOut) {
 }
 
 function hoursWorkedOnDate(employee, date) {
-  let punchIn =employee.timeInEvents.filter(n => {
+  let punchIn = employee.timeInEvents.filter(n => {
     return n.date === date})
-  })
+    console.log(punchIn)
+    return punchIn[0].hour
 }
