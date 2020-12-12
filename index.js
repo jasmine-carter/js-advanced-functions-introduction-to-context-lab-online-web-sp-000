@@ -15,6 +15,6 @@ function createEmployeeRecords(records) {
   return records.map(createEmployeeRecord)
 }
 
-function createTimeInEvent() {
-  
+function createTimeInEvent(employee, event) {
+  return employee.timeInEvents << event
 }
