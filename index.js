@@ -58,8 +58,7 @@ function calculatePayroll(employees) {
 };
 
 function findEmployeeByFirstName(employeesList, name) {
-   employeesList.filter(function(employee) {
-    return employee.firstName === name
+   return employeesList.find(function(employee) {
+     return employee.firstName === name
   })
-
 }
