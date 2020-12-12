@@ -32,6 +32,6 @@ function hoursWorkedOnDate(employee, date) {
      return n.date === date})
   let punchOut = employee.timeOutEvents.filter(n => {
      return n.date === date})
-    let hoursWorked = punchOut[0].hour - punchIn[0].hour/100
-     return hoursWorked
+    let hoursWorked = punchOut[0].hour - punchIn[0].hour
+     return hoursWorked/100
   }
