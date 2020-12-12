@@ -16,7 +16,7 @@ function createEmployeeRecords(records) {
 }
 
 function createTimeInEvent(employee, timeIn) {
-  let newEvent = {type: "TimeIn", hour: timeIn.substring(11, 15)}
+  let newEvent = {type: "TimeIn", hour: timeIn.substring(11, 15), date: timeIn.substring(0,10)}
     employee.timeInEvents.push(newEvent)
     return employee
 }
