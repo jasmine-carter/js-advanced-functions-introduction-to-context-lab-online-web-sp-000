@@ -34,4 +34,8 @@ function hoursWorkedOnDate(employee, date) {
      return n.date === date})
     let hoursWorked = punchOut[0].hour - punchIn[0].hour
      return hoursWorked/100
+  };
+
+  function wagesEarnedOnDate(employee, date) {
+    return hoursWorkedOnDate(employee, date) * employee.payPerHour
   }
