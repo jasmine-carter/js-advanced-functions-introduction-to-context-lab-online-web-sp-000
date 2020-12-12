@@ -36,6 +36,6 @@ function hoursWorkedOnDate(employee, date) {
      return hoursWorked/100
   };
 
-  function wagesEarnedOnDate(employee, date) {
-    return hoursWorkedOnDate(employee, date) * employee.payPerHour
-  }
+function wagesEarnedOnDate(employee, date) {
+  return hoursWorkedOnDate(employee, date) * employee.payPerHour
+}
